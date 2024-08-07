@@ -1,0 +1,468 @@
+@media (min-width: 340px) and (min-height: 660px) and (orientation: portrait) {
+
+    html{
+        width : 100vw;
+    }
+    body{
+        width: 100vw;
+        height: 500px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+    }
+    
+    img{
+        padding-right: 5vw;
+        padding-left: 5vw;
+        width: 35vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        height: 4vh;
+    }
+    
+    .total-contneur{
+    height: 95vh;
+    width: 90vw;
+    margin-bottom: 6vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);    
+    }
+    
+    .entete{
+        padding: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    
+    .compte{
+        font-size: 2.8vh;
+        margin-bottom: 0;
+    }
+    
+    
+    .rapide{
+        font-size: 2vh;
+    }
+
+
+    .premiereTable {
+        margin-left: 2vw;
+        margin-right: 1.5vw;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 2vw;
+        padding-bottom: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3vh 3vh 3vh 3vh;
+        grid-gap: 1vh;
+    }
+    
+    
+    .prenomClass, .nomfamilleClass, .mobileemailClass, .motpassClass{
+        font-size: 2vh;
+        border-radius: 0.3vw;
+        padding-left: 1vw;
+        border: 2px solid  rgb(233, 234, 235);
+    }
+    
+    .naiss {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        display: grid;
+        grid-gap: 2.5vh;
+    }
+
+    .jourClass, .moisClass, .anneeClass{
+        padding-left: 1vw;
+        border-radius: 0.3vw;
+        font-size: 2vh;
+        height: 3vh;
+    }
+    
+    .date, .gen{
+        font-size: 1.5vh;
+        margin-left: 3vw;
+    }
+
+    .dateClass, .genreClass{
+        padding-top: 2vh;
+    }
+
+    .Fem, .Hom, .Perso{
+        font-size: 1.6vh;
+        padding-left: 1vw;
+    }
+    
+    input[type="radio"] {
+        width:  2.5vw;
+        height: 2.5vw;
+        margin-right: 1vw;
+        margin-bottom: 0.4vh;
+        color: black;
+      }
+
+    .choixGen {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        display: grid;
+        grid-template-rows: 3vh ;
+        grid-gap: 0.5vh;
+    }   
+    
+    .gen1, .gen2, .gen3{
+        font-size: 1.2vh;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .pied{
+        font-size: 1.2vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .inscrire{
+        padding-bottom: 0.5vh;
+        padding-top: 0.5vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        font-size: 2vh;
+        border-radius: 5px;
+        margin: 1vh;
+    }
+    
+    .dejacompte{
+        font-size: 2vh;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        padding-top: 0.8vh;
+        padding-bottom: 0.5vh;
+    }
+
+    footer{
+        width: 90vw;
+        font-size: 0.7vw;
+        margin: 20px;
+        margin-top: 2vh;
+    }
+    
+    footer a{
+        font-size: 1vh;
+        padding-left: 1vw;
+    }
+    
+    .Francais{
+        font-size: 1vh;
+    }
+    
+    .ligneb{
+        border-top: 2px solid  rgb(233, 234, 235);
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 1vh;
+    }
+
+    .lignee{
+            font-size: 1.5vh;
+    }
+    
+    .error{
+        border: 1px solid rgb(255, 0, 0);
+    }
+    .error1, .error2, .error3, .error4, .error5{
+        font-size: 1.3vh;
+        color: red;
+    }
+
+}
+
+@media (min-width: 650px) {
+    .premiereTable {
+        padding-left: 0.1vw;
+        padding-right: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5vh 5vh;      
+    }
+    
+    .prenomClass{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .nomfamilleClass{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .mobileemailClass{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .motpassClass{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    
+    .naiss {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1vw;
+        grid-gap: 2vh;
+    }
+    
+    .jourClass{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .moisClass{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .anneeClass{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    
+    
+    .choixGen {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    
+    .gen1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .gen2{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .gen3{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+}
+
+
+
+@media (min-width: 340px) and (min-height: 300px) and (orientation: landscape) {
+    
+    main{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        padding-top: 5vw;
+    }
+    
+    img{
+        display: none;
+    }
+    
+    .face{
+        display: inline;
+        visibility:visible;
+        font-size: 20vw;
+        color: blue;
+    }
+    
+    
+    main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center; 
+    }
+    
+    
+    .total-contneur{
+    height: 95vh;
+    width: 50vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 6vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(155, 155, 155, 0.5);    
+    }
+    
+    .entete{
+        padding: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    
+    .compte{
+        font-size: 2.8vh;
+        margin-bottom: 0;
+    }
+    
+    
+    .rapide{
+        font-size: 2vh;
+    }
+
+
+    .premiereTable {
+        padding-left: 1vh;
+        padding-right: 1vh;
+        padding-top: 1vw;
+        padding-bottom: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5vh 5vh;
+        grid-gap: 1vh;
+    }
+    
+    
+    .prenomClass, .nomfamilleClass, .mobileemailClass, .motpassClass{
+        font-size: 2.2vh;
+        border-radius: 0.3vw;
+        padding-left: 1vw;
+        border: 2px solid  rgb(233, 234, 235);
+    }
+    
+    .naiss {
+        padding-left: 1vh;
+        padding-right: 1vh;
+        display: grid;
+        grid-gap: 1vh;
+    }
+
+    .jourClass, .moisClass, .anneeClass{
+        height: 5vh;
+        padding-left: 0.3vw;
+        border-radius: 0.3vw;
+        font-size: 3vh;
+        border: 2px solid  rgb(233, 234, 235);
+    }
+    
+    .date, .gen{
+        margin-left: 2vw;
+        font-size: 3vh;
+        margin-left: 1vh;
+    }
+
+    .dateClass, .genreClass{
+        padding-top: 3vh;
+    }
+
+    .Fem, .Hom, .Perso{
+        font-size: 3vh;
+        padding-left: 1vh;
+    }
+    
+    input[type="radio"] {
+      width: 3vh;
+      height: 50vh;
+      margin-right: 1vh;
+        margin-bottom: 0.4vh;
+      }
+
+    .choixGen {
+        padding-left: 1vh;
+        padding-right: 1vh;
+        display: grid;
+        grid-template-rows: 5vh ;
+        grid-gap: 1vh;
+    }   
+    
+    .gen1, .gen2, .gen3{
+        font-size: 3vh;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid  rgb(233, 234, 235);
+    }
+    
+    .pied{
+        font-size: 2vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+    }
+
+    .inscrire{
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 3vh;
+        border-radius: 5px;
+        margin: 1.5vh;
+    }
+    
+    .dejacompte{
+        font-size: 3vh;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        padding-top: 0.8vh;
+        padding-bottom: 0.5vh;
+    }
+
+    footer{
+        width: 90vw;
+        font-size: 2vh;
+        margin: 20px;
+        margin-top: 2vh;
+    }
+    
+    footer a{
+        font-size: 2vh;
+        padding-left: 1vw;
+    }
+    
+    .Francais{
+        font-size: 2vh;
+    }
+    
+    .ligneb{
+        border-top: 2px solid  rgb(233, 234, 235);
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 1vh;
+    }
+
+    .lignee{
+            font-size: 3vh;
+    }
+   
+    .error{
+        border: 1px solid rgb(255, 0, 0);
+    }
+    
+     
+    .error1, .error2, .error3, .error4, .error5{
+        font-size: 2vh;
+        color: red;
+    }
+
+}
+
+
+
+
+
+
+

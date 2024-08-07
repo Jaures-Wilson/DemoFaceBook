@@ -1,0 +1,305 @@
+body{
+    width: 300px;
+    height: 500px;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+main{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(233, 234, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 1px;
+    border: 1px solid rgb(233, 234, 235);
+}
+
+input:focus {
+    outline : none;
+}
+
+img{
+    padding: 5px;
+    height: 15px;
+    width: 70px;
+}
+
+.face{
+    display: none;
+    visibility: hidden;
+    font-size: 1px;
+}
+
+a{
+    color: #385898;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.total-contneur{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 340px;
+    height: 600px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(233, 234, 235);
+}
+
+.entete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid  rgb(233, 234, 235) ;
+}
+
+.compte{
+    color: #1c1e21;
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.rapide{
+    font-size: 12px;
+    color: #606770;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.premiereTable {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 20px 20px 20px;
+    grid-gap: 8px;
+}
+
+.prenomClass{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.nomfamilleClass{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.mobileemailClass{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.motpassClass{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.prenomClass, .nomfamilleClass, .mobileemailClass, .motpassClass{
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid  rgb(233, 234, 235);
+    padding-left: 1px;
+}
+
+.naiss {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px 10px 10px ;
+    grid-gap: 15px;
+}
+
+.jourClass{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.moisClass{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.anneeClass{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.jourClass, .moisClass, .anneeClass{
+    padding-left: 1px;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 15px;
+    border: 1px solid  rgb(233, 234, 235);
+}
+
+.date, .gen{
+    margin-left: 5px;
+    font-size: 12px;
+    color : #606770;
+}
+
+.dateClass, .genreClass{
+    padding-top: 5px;
+}
+
+.Fem, .Hom, .Perso{
+    font-size: 12px;
+    border: none;
+    padding-left: 3px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  }
+
+.choixGen {
+    padding-left: 2px;
+    padding-right: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 20px 20px;
+    grid-gap: 5px;
+}
+
+.gen1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.gen2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.gen3{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.gen1, .gen2, .gen3{
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid  rgb(233, 234, 235);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genreClass{
+    margin-top: 10px;
+}
+
+.pied{
+    font-family:  Helvetica, Arial, sans-serif;
+    color:  #606770;
+    font-size: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.inscrire{
+    background-color: #00a400;;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+.piedform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dejacompte{
+    appearance: none;
+    font-size: 15px;
+    color: #1877f2;;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer{
+    margin : 20px;
+    font-family:  Helvetica, Arial, sans-serif;
+    background-color: white;
+    width: 350px;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer a{
+    font-size: 8px;
+    padding-left: 1px;
+}
+ 
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Francais{
+    font-size: 8px;
+}
+
+.ligneb{
+    border-top: 1px solid  rgb(233, 234, 235);
+    padding-top: 1px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.lignee{
+    font-size: 10px;
+    color:  #606770;
+}
+
+.error{
+    border: 1px solid rgb(255, 0, 0);
+    margin : 0px;
+    padding: 0px;
+}
+
+.error1, .error2, .error3, .error4, .error5{
+    font-size: 7px;
+    color: red;
+    margin : 0px;
+    padding: 0px;
+}
+
+.error2{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+
